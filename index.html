@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITalk (WEBAPP)</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class= "log">
+                VITalk
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators,inspirations and projects">
+
+            </div>
+            <div class="create">
+                <label class="btn btn-primary"  for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/698/757/desktop-wallpaper-beauty-cute-cartoon-girl-cartoon-attitude-girl.jpg">
+                </div> 
+            </div>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------    -->
+    <main>
+        <div class="container">
+            <!------------------>
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/698/757/desktop-wallpaper-beauty-cute-cartoon-girl-cartoon-attitude-girl.jpg" >
+                    </div>
+                    <div class="handle">
+                        <h4>Priya S</h4>
+                        <p class="tetx-muted">
+                        @prizii
+                        </p>
+                    </div>
+                </a>
+                <!-- ----sidebar-------- -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item " id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">2+</small></i></span><h3>Notifications</h3>
+                        <!--      NOTIFICATION POPUP-->
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUg39zLxCWnc4YUQKITGt5il72jp6FXwhEfHTUZPIrIw&s">
+
+                                </div>
+                                <div class="notification-body">
+                                    <b>Siri</b> Accepted you friend request
+                                    <small class ="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://img.lovepik.com/free-png/20210919/lovepik-a-young-and-handsome-boy-png-image_400341955_wh1200.png">
+
+                                </div>
+                                <div class="notification-body">
+                                    <b>Jarvis</b> Commented on your post
+                                    <small class ="text-muted">1 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--    ------------end of notifiaction popup-------->
+                         
+                    </a>
+                        
+                    <a class="menu-item "  id ="messages-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">1+</small></i></span><h3>Message</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-palette"></i></span><h3>Themes</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3> 
+                    </a>
+                           
+                         
+                </div>
+
+            <!------------sidebar ending-->
+            <label for="create-post" class="btn btn-primary">Create-Post</label>
+
+            </div>
+            <!--     -----middle--------  -->
+            <div class="middle">
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%     STORIES OPT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTMRBzUjxrpctYnc1NsYEu9mM8iAWaSu7-A&usqp=CAU">
+                        </div>
+                        <p class="name">Your Story</p>
+            
+
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDO4s1rCHMxSKfOQhQqvLcI62KzXgECTrmDETotyM-Cg&s">
+
+
+                        </div>
+                        <p class="name">Jarvis</p>
+            
+
+                    </div><div class="story">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOj19KtJX3aL5jT87tIamlBdRNsmY7ZVDbDg&usqp=CAU">
+
+                        </div>
+                        <p class="name">Tony Stark</p>
+            
+
+                    </div>
+                </div>
+                <!--  ----------------end of stories ---------->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/698/757/desktop-wallpaper-beauty-cute-cartoon-girl-cartoon-attitude-girl.jpg">
+                    
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Priya S?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+
+                </form>
+
+                <!-- --------------------feeds----------------- -->
+                <div class="feeds">
+                    <!-----------------feed 1-------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOj19KtJX3aL5jT87tIamlBdRNsmY7ZVDbDg&usqp=CAU">
+
+                                </div>
+                                <div class="ingo">
+                                    <h3>Scarlett</h3>
+                                    <small>Dubai, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+        
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                            <p>Liked by <b>Elena</b> and <b>151 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Scarlett</b> In the deepest ocean of nature. <span class="hash-tag"></span> #nature_talks</p>
+                        </div>
+                    </div>
+                
+                <!----------------end of feed 1------------->
+
+                <!-------------------feed -2 ---------------------------------->
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOj19KtJX3aL5jT87tIamlBdRNsmY7ZVDbDg&usqp=CAU">
+
+                            </div>
+                            <div class="ingo">
+                                <h3>Scarlett</h3>
+                                <small>Dubai, 15 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+    
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg">
+                    </div>
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment-dots"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark-full"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                        <p>Liked by <b>Elena</b> and <b>151 others</b></p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Scarlett</b> In the deepest ocean of nature. <span class="hash-tag"></span> #nature_talks</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------feed 3-------------------------->
+            <div class="feed">
+                <div class="head">
+                    <div class="user">
+                        <div class="profile-photo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOj19KtJX3aL5jT87tIamlBdRNsmY7ZVDbDg&usqp=CAU">
+
+                        </div>
+                        <div class="ingo">
+                            <h3>Scarlett</h3>
+                            <small>Dubai, 15 MINUTES AGO</small>
+                        </div>
+                    </div>
+                    <span class="edit">
+                        <i class="uil uil-ellipsis-h"></i>
+
+                    </span>
+                </div>
+                <div class="photo">
+                    <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80">
+                </div>
+                <div class="action-buttons">
+                    <div class="interaction-buttons">
+                        <span><i class="uil uil-heart"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark-full"></i></span>
+                    </div>
+                </div>
+                <div class="liked-by">
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44UfW0TisOOnJrkcY7NM2B6WM9YGvnr3_iA&usqp=CAU"></span>
+                    <p>Liked by <b>Elena</b> and <b>151 others</b></p>
+                </div>
+                <div class="caption">
+                    <p><b>Scarlett</b> In the deepest ocean of nature. <span class="hash-tag"></span> #nature_talks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!---     -----right-----  -->
+            <div class="right">
+                
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
